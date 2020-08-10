@@ -2,13 +2,10 @@ from tkinter import *
 import random
 import time
 from threading import Thread
-import numpy as np
 
 SIZE = 20
-# DIRECTIONS = {Up:[0,-20],Down:[0,20],Left:[-20,0],Right:[20,0]}
 
 root = Tk()
-
 
 C = Canvas(root,height=500,width=500,bg='white')
 
@@ -206,6 +203,5 @@ arrow_right = root.bind("<Right>",P.mov_right)
 arrow_left = root.bind("<Left>",P.mov_left)
 
 C.pack()
-
 
 root.mainloop()
